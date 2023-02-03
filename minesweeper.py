@@ -9,25 +9,25 @@ import os
 
 # for converting .app file
 
-flag = os.path.join(sys._MEIPASS, "icons/flag4.png")
+"""flag = os.path.join(sys._MEIPASS, "icons/flag4.png")
 default = os.path.join(sys._MEIPASS, "icons/default.png")
 mine = os.path.join(sys._MEIPASS, "icons/darkbomb.png")
 clickedButton = os.path.join(sys._MEIPASS, "icons/clickedButton.png")
 mainBomb = os.path.join(sys._MEIPASS, "icons/mainBomb.png")
 mainDizzy = os.path.join(sys._MEIPASS, "icons/mainDizzy.png")
 mainSmile = os.path.join(sys._MEIPASS, "icons/mainSmile.png")
-mainFearful = os.path.join(sys._MEIPASS, "icons/mainFearful.png" )
+mainFearful = os.path.join(sys._MEIPASS, "icons/mainFearful.png" )"""
 
 # for run .py file
 
-"""flag = "icons/flag4.png"
+flag = "icons/flag4.png"
 default = "icons/default.png"
 mine = "icons/darkbomb.png"
 clickedButton = "icons/clickedButton.png"
 mainBomb = "icons/mainBomb.png"
 mainDizzy = "icons/mainDizzy.png"
 mainSmile = "icons/mainSmile.png"
-mainFearful = "icons/mainFearful.png"""
+mainFearful = "icons/mainFearful.png"
 
 class windows():
     def ms_window(layout_name):
