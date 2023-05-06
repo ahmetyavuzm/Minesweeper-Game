@@ -2,10 +2,6 @@ import PySimpleGUI as sg
 from random import randint
 import threading
 import time
-import pandas as pd
-import numpy as np
-import sys
-import os
 
 # for converting .app file
 
@@ -247,9 +243,15 @@ class functions():
         timer = threading.Timer(1.0 , clock_updater)
         timer.start()
 
-    def check_winner(buttons_status):
+    def check_winner(buttons_status:dict):
         global dificulity
-        bs_df = pd.DataFrame(buttons_status)
+        
+        def nonActivatedButtonNum(buttons_status):
+            num = 0
+            for pos in buttons_status:
+                num += int(not buttons_status[pos]["activate"])
+            return num
+        
         
         def win_func():
             global timer
@@ -268,9 +270,7 @@ class functions():
             elif new_event == "-SHOW_BOARD-":
                 pass                
 
-        activate_bincount = np.bincount(bs_df.loc["activate"][:])
-        non_activated_button_num = activate_bincount[0]
-        #print(activate_bincount)
+        non_activated_button_num = nonActivatedButtonNum(buttons_status)
         if non_activated_button_num == current_mine_num:
             win_func()
 
@@ -384,7 +384,7 @@ while True:
         
         window.close()
         window = windows.ms_window("GAME")
-        #functions.admin_mode()
+        functions.admin_mode()
         functions.timer_func()
         window["-DIFICULITY_TXT-"].update(game_mode_text)
 
