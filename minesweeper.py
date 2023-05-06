@@ -384,7 +384,7 @@ while True:
         
         window.close()
         window = windows.ms_window("GAME")
-        functions.admin_mode()
+        #functions.admin_mode()
         functions.timer_func()
         window["-DIFICULITY_TXT-"].update(game_mode_text)
 
