@@ -1,0 +1,13 @@
+{
+    "en":{
+        "title": "Minesweeper Game",
+        "description": " My first game that I developed using Python.",
+        "longDescription": "My first game that I developed and improved using Python and PySimpleGUI. With this game, I learned about recursive functions and user interfaces. The game works fine on macOS operating systems. There may be problems on other operating systems."
+    },
+    "tr":{
+        "title": "Mayın Tarlası Oyunu",
+        "description": "Python kullanarak geliştirdiğim bana ait ilk oyun.",
+        "longDescription": "Python ve PySimpleGUI kullanarak oluşturduğum ve geliştirdiğim ilk oyun. Bu oyun ile recursive fonksiyonları ve kullanıcı arayüzü hakkında temel bilgi sahibi oldum. Oyun macos işletim sistemlerinde düzgün çalışıyor. Diğer işletim sistemlerinde sorunlar olabilir."
+    },
+    "tags":["game", "ui","python"]
+}
